@@ -1,0 +1,18 @@
+#rootInicio{
+   -fx-background-image:url(../resources/FondoInicio.jpg);
+   -fx-background-size: cover;
+}
+
+.rootSelec{
+   -fx-background-image:url(../resources/FondoSeleccionPer.jpg);
+   -fx-background-size: cover;
+}
+.BotonJugar> ImageView{-fx-image: url("../resources/BotonJugar.png");}
+.BotonOpciones> ImageView{-fx-image: url("../resources/BotonConfiguraciones.png");}
+.BotonCreditos> ImageView{-fx-image: url("../resources/BotonCreditos.png");}
+.BotonSalir> ImageView{-fx-image: url("../resources/BotonSalir.png");}
+
+#btnIzquierda > ImageView{-fx-image: url("../resources/BotonIzq.png");}
+#btnDerecha > ImageView{-fx-image: url("../resources/BotonDer.png");}
+#btnSalir > ImageView{-fx-image: url("../resources/Salir.png");}
+#btnJugar > ImageView{-fx-image: url("../resources/Play.png");}

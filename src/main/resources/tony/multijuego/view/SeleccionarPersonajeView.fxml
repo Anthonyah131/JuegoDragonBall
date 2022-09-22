@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane id="AnchorPane" fx:id="rootSelec" prefHeight="500.0" prefWidth="800.0" styleClass="rootSelec" stylesheets="@Style.css" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/15.0.1" fx:controller="tony.multijuego.controller.SeleccionarPersonajeViewController">
+   <children>
+      <VBox prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="800.0">
+               <children>
+                  <JFXButton fx:id="btnIzquierda" onAction="#onActionBtnIzquierda">
+                     <HBox.margin>
+                        <Insets left="50.0" right="50.0" />
+                     </HBox.margin>
+                     <graphic>
+                        <ImageView fitHeight="85.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" />
+                     </graphic>
+                  </JFXButton>
+                  <ImageView fx:id="imgPersonaje" fitHeight="400.0" fitWidth="250.0" pickOnBounds="true" preserveRatio="true">
+                     <HBox.margin>
+                        <Insets left="50.0" right="50.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <JFXButton fx:id="btnDerecha" onAction="#onActionBtnDerecha">
+                     <HBox.margin>
+                        <Insets left="50.0" right="50.0" />
+                     </HBox.margin>
+                     <graphic>
+                        <ImageView fitHeight="85.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" />
+                     </graphic>
+                  </JFXButton>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <JFXButton fx:id="btnSalir" onAction="#onActionBtnSalir" prefHeight="200.0" prefWidth="200.0">
+                     <HBox.margin>
+                        <Insets left="25.0" right="25.0" />
+                     </HBox.margin>
+                     <graphic>
+                        <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" />
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton fx:id="btnJugar" onAction="#onActionBtnJugar" prefHeight="200.0" prefWidth="200.0">
+                     <HBox.margin>
+                        <Insets left="25.0" right="25.0" />
+                     </HBox.margin>
+                     <graphic>
+                        <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" />
+                     </graphic>
+                  </JFXButton>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

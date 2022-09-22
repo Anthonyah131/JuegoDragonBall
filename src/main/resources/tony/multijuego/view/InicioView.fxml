@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane fx:id="rootInicio" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" stylesheets="@Style.css" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tony.multijuego.controller.InicioViewController">
+   <center>
+      <AnchorPane prefHeight="500.0" prefWidth="800.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <ImageView fx:id="imgInicio" fitHeight="500.0" fitWidth="800.0" pickOnBounds="true" />
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" layoutX="294.0" layoutY="170.0" prefHeight="500.0" prefWidth="800.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <JFXButton fx:id="btnIniciar" onAction="#onActionBtnIniciar" styleClass="BotonJugar">
+                     <graphic>
+                        <ImageView fitHeight="100.0" fitWidth="250.0" pickOnBounds="true" preserveRatio="true" />
+                     </graphic>
+                     <padding>
+                        <Insets bottom="5.0" top="5.0" />
+                     </padding>
+                  </JFXButton>
+                  <JFXButton fx:id="btnOpciones" onAction="#onActionBtnOpciones" styleClass="BotonOpciones">
+                     <graphic>
+                        <ImageView fitHeight="100.0" fitWidth="250.0" pickOnBounds="true" preserveRatio="true" />
+                     </graphic>
+                     <padding>
+                        <Insets bottom="5.0" top="5.0" />
+                     </padding>
+                  </JFXButton>
+                  <JFXButton fx:id="btnCreditos" onAction="#onActionBtnCreditos" styleClass="BotonCreditos">
+                     <graphic>
+                        <ImageView fitHeight="100.0" fitWidth="250.0" pickOnBounds="true" preserveRatio="true" />
+                     </graphic>
+                     <padding>
+                        <Insets bottom="5.0" top="5.0" />
+                     </padding>
+                  </JFXButton>
+                  <JFXButton fx:id="btnSalirr" onAction="#onActionBtnSalir" styleClass="BotonSalir">
+                     <graphic>
+                        <ImageView fitHeight="100.0" fitWidth="250.0" pickOnBounds="true" preserveRatio="true" />
+                     </graphic>
+                     <padding>
+                        <Insets bottom="5.0" top="5.0" />
+                     </padding>
+                  </JFXButton>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
